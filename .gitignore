@@ -1,5 +1,24 @@
+# Entorno virtual
 venv/
+
+# Archivos de Python que NO sirven
 __pycache__/
 *.pyc
-data/*.csv
 
+# Datos crudos o pesados
+data/*
+!data/.keep  # para mantener la carpeta vacía sin datos
+
+# No subir figuras generadas
+figures/*
+!figures/.keep
+
+# No subir reportes generados automáticamente
+reports/*
+!reports/.keep
+
+# No subir checkpoints de notebooks
+*.ipynb_checkpoints
+
+# Logs
+*.log
